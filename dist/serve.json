@@ -1,0 +1,18 @@
+
+{
+  "headers": [
+    {
+      "source" : "*.wasm",
+      "headers" : [{
+        "key" : "Content-Type",
+        "value" : "application/wasm"
+      }]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/:name/example.pdf",
+      "destination": "/static/:name/example.pdf"
+    }
+  ]
+}
